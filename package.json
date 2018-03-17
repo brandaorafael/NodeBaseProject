@@ -1,6 +1,6 @@
 {
   "name": "BaseProject",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Base project for a simple API in NodeJS",
   "main": "app.js",
   "scripts": {
