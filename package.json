@@ -1,7 +1,7 @@
 {
   "name": "BaseProject",
   "version": "1.0.0",
-  "description": "Project to test bind between codes",
+  "description": "Base project for a simple API in NodeJS",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,12 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.13.3",
-    "ejs": "^2.3.4",
     "express": "^4.13.3",
-    "lodash": "^4.13.1",
     "method-override": "^2.3.5",
-    "morgan": "^1.6.1",
-    "multer": "^1.1.0",
-    "nodemon": "^1.9.1"
+    "morgan": "^1.6.1"
   }
 }
