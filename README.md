@@ -28,5 +28,3 @@ Essa arquitetura consiste de 3 partes principais, o app.js, server.js e modules.
 ## Testando a API
 
 Se o projeto for iniciado com sucesso, ele estará roteando a API para a porta 3000 do seu computador. Para testar o modulo 'teste', digite ```localhost:3000``` no seu navegador. O programa deverá imprimir um json ```{success: true}```na tela.
-
-Inicialmente peguei como base essa arquitetura que desenvolvi (e está em constante evolução) para fazer a API pedida. Essa arquitetura visa facilitar modificações necessárias no projeto, pois as responsabilidades ficam muito bem separadas. O projeto consiste em 3 partes principais: os módulos, as rotas e o server. Os módulos são as operações que serão ativadas quando é feito um request ao sistema. As rotas são os endereços definidos para cada endpoint. O server é onde os dois componentes se unem, ou seja, é lá que indicará qual função será executada quando determinado endpoint for acessado.
