@@ -2,7 +2,7 @@
 
 ## Pré requisitos
 
-Para rodar esse projeto, é necessário ter o Node.js e o seu gestor de pacotes NPM instalados em seu computador. Para mais infomrações clique [aqui](https://nodejs.org/).
+Para rodar esse projeto, é necessário ter o Node.js e o seu gestor de pacotes NPM instalados em seu computador. Para mais infomrações clique [aqui](https://nodejs.org/){:target="_blank"}.
 
 Para um melhor entendimento deste projeto, deve-se ter um conhecimento básico de Javascript e de API REST.
 
@@ -12,7 +12,7 @@ Esse projeto base tem como objetivo facilitar a construção de uma API REST sem
 Como alguns projetos costumam ter algumas particularidades, as branches começadas em ```???``` são projetos base que já vem com algumas particularidades implementadas.
 Na lista a seguir se encontram as branches que possuem algo já implementado:
 
-* **[???-](google.com)** Teste
+* **[???-](http://google.com)** Teste
 
 ## Instalação
 
