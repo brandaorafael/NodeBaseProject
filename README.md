@@ -1,9 +1,22 @@
 # Código base para criação de uma API simples usando NodeJS
 
+## Pré requisitos
+
+Para rodar esse projeto, é necessário ter o Node.js e o seu gestor de pacotes NPM instalados em seu computador. Para mais infomrações clique [aqui](https://nodejs.org/).
+
+Para um melhor entendimento deste projeto, deve-se ter um conhecimento básico de Javascript e de API REST.
+
+## Branches
+
+Esse projeto base tem como objetivo facilitar a construção de uma API REST sem precisar se proecupar com a configuração inicial.
+Como alguns projetos costumam ter algumas particularidades, as branches começadas em ```???``` são projetos base que já vem com algumas particularidades implementadas.
+Na lista a seguir se encontram as branches que possuem algo já implementado:
+
+* **[???-](http://google.com)** - Branc
+
 ## Instalação
 
-Clone o repositório e execute `npm install` na pasta do projeto para 
-instalar as dependências
+Clone, download ou de fork no projeto. Feito isso, entre no diretório do projeto e execute `npm install` para instalar todas as dependências.
 
 ## Rodando o Projeto
 
