@@ -14,6 +14,12 @@ var server = require(__dirname + '/server.js')(modules);
 
 server(app)();
 
-return http.listen(process.env.PORT || 3000, function(){
+var server =  http.listen(process.env.PORT || 3000, function(){
 	console.log("Server is on, listening on: 3000");
 });
+
+module.exports = {
+	server: server
+};
+
+return server;

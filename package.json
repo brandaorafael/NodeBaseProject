@@ -1,17 +1,21 @@
 {
   "name": "BaseProject",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Base project for a simple API in NodeJS",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=test mocha --exit",
+    "start": "node app.js"
   },
   "author": "Rafael Augusto Brandão (brandaorafael)",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.13.3",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
     "express": "^4.13.3",
     "method-override": "^2.3.5",
-    "morgan": "^1.6.1"
+    "mocha": "^6.0.2",
+    "morgan": "^1.9.1"
   }
 }
