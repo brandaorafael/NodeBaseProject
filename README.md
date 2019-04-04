@@ -1,4 +1,4 @@
-# Base code to implementation of a simple API using NodeJS
+# Base code to implement a simple API using NodeJS
 
 ## Requirements
 
