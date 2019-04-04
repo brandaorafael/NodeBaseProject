@@ -1,43 +1,48 @@
-# Código base para criação de uma API simples usando NodeJS
+# Base code to implementation of a simple API using NodeJS
 
-## Pré requisitos
+## Requirements
 
-Para rodar esse projeto, é necessário ter o Node.js e o seu gestor de pacotes NPM instalados em seu computador. Para mais infomrações clique [aqui](https://nodejs.org/).
+To be able to run this project, it's necessary to have NodeJS and its package manager NPM installed in your computer. For more informations, click [here](https://nodejs.org/).
 
-Para um melhor entendimento deste projeto, deve-se ter um conhecimento básico de Javascript e de API REST.
+For a better understanding of this project, you must have some knowledge in Javascript and REST API.
 
 ## Branches
 
-Esse projeto base tem como objetivo facilitar a construção de uma API REST sem precisar se proecupar com a configuração inicial.
-Como alguns projetos costumam ter algumas particularidades, as branches começadas em ```???``` são projetos base que já vem com algumas particularidades implementadas.
-Na lista a seguir se encontram as branches que possuem algo já implementado:
+This project aims to help in the proccess of building a REST API.
+As some projects tend to have specific features, the branches of this repository stsrting with ```ft-``` are base projects with some of these features already implemented.
+In the following list you can check the branches with some feature already implemented:
 
-* **[???-](http://google.com)** - Branc
+* **[???-](https://github.com/brandaorafael/NodeBaseProject)** - Branc
 
-## Instalação
+## Installation
 
-Clone, download ou de fork no projeto. Feito isso, entre no diretório do projeto e execute `npm install` para instalar todas as dependências.
+Clone, download or fork the repository. Done that, access the project directory in you console and run `npm install` to install all dependencies.
 
-## Rodando o Projeto
+## Project architecture
+    
+    app.js                          --> Main file, initial configurations
+    modules.js                      --> File with all the packages imported to the project
+    server.js                       --> File that connects all the modules to its respectives routes.
+    package.json                    --> Project data and all package dependencies that will be installed with the "npm install" command.
+    routes/
+        router.js                   --> File responsible for the versioning of the API endpoints (I'm using only "v1" on this project).
+            /v1                     --> Directory with the urls paths of the v1 router, linking with its respectives controllers.
+    modules/                        --> Directory containing the controllers of the API.
+        example/
+            example-controller.js   --> API example controller module.
+    node_modules/                   --> Directory automatically created with all the project dependencies.
+
+This architecture has 3 main parts:
+* The ```app.js```, ```server.js``` and ```modules.js``` that configure the API
+* The ```routes``` directory that creates the url path endpoints and connects it with its respectives controllers
+* The ```modules``` directory with all the controllers for the API
+
+To create a new endpoint, you must create a new controller at the ```modules``` folder and import it to the ```server.js``` file and add it to its respective router object (probably you will have to create a new one as well). Finally you should create the new endpoint at the ```routes/v1``` folder and connects it to the object created on the ```server.js``` file.
+
+## Running the project
 
     node app.js
 
-## Arquitetura do projeto
-    
-    app.js                          --> Arquivo principal, configurações iniciais
-    modules                         --> Arquivo com todos os modulos importados para o projeto
-    server.js                       --> Arquivo que une os modulos com suas respectivas rotas.
-    package.json                    --> Dados do projeto e todas as dependências que serão instaladas com o comando "npm install"
-    routes/
-        router.js                   --> Arquivo responsável pela separação das versões da API a serem utilizadas (estou usando apenas a V1)
-            /v1                     --> Diretório com todos os paths que serão utilizados no V1, chamando suas respectivas operações no sistema
-    modules/                        --> Diretório que contém as operações a serem executadas quando chamados os endpoints
-        teste/                      --> Pasta com os controllers do modulo teste
-            teste-controller.js     --> Controller do modulo teste da API
-    node_modules/                   --> Diretório criado automaticamente com todas as dependências que o sistema importou
+## Testing the API
 
-Essa arquitetura consiste de 3 partes principais, o app.js, server.js e modules.js que fazem a configuração inicial da API, a pasta routes que cria os endpoints e conectam com seus respectivos modulos e a pasta modules, onde se encontram todo processamento dos modulos que alimentarão a API. Sempre que for necessário criar mais um endpois, deve fazer seu controller na pasta ```modules```e depois adiciona-lo no JSON de roteamneto no arquivo ```server.js```. Por último deve-se criar seu endpoint na pasta ```routes/v1```.
-
-## Testando a API
-
-Se o projeto for iniciado com sucesso, ele estará roteando a API para a porta 3000 do seu computador. Para testar o modulo 'teste', digite ```localhost:3000``` no seu navegador. O programa deverá imprimir um json ```{success: true}```na tela.
+If the project was started with success, it will be routing the API on the port 3000 of your computer. To test the example endpoint, use you browser to go to the url ```localhost:3000/v1/example```. The browser will return the message ```{success: true}``` on the screen.
