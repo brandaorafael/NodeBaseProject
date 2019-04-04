@@ -45,4 +45,4 @@ To create a new endpoint, you must create a new controller at the ```modules``` 
 
 ## Testing the API
 
-If the project was started with success, it will be routing the API on the port 3000 of your computer. To test the example endpoint, use you browser to go to the url [localhost:3000/v1/example](localhost:3000/v1/example). The browser will return the message ```{success: true}``` on the screen.
+If the project was started with success, it will be routing the API on the port 3000 of your computer. To test the example endpoint, use you browser to go to the url [localhost:3000/v1/example](localhost:3000/v1/example/). The browser will return the message ```{success: true}``` on the screen.
