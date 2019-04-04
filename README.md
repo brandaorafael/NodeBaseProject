@@ -42,7 +42,7 @@ This architecture has 4 main parts:
 * The ```modules``` directory with all the controllers for the API
 * The ```test``` directory containing the automated tests files.
 
-To create a new endpoint, you must create a new controller at the ```modules``` folder and import it to the ```server.js``` file and add it to its respective router object (probably you will have to create a new one as well). Finally you should create the new endpoint at the ```routes/v1``` folder and connects it to the object created on the ```server.js``` file.
+To create a new endpoint, you must create a new controller at the ```modules``` folder and import it to the ```server.js``` file and add it to its respective router object (probably you will have to create a new one as well). Finally you should create the new endpoint at the ```routes/v1``` folder and connects it to the object created on the ```server.js``` file. If you want to implement an automated test, you should create a new file specific for the endpoint that will be tested and import it to the ```tests.js``` file.
 
 ## Running the project
 
