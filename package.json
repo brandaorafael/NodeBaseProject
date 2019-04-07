@@ -10,14 +10,15 @@
   "author": "Rafael Augusto Brandão (brandaorafael)",
   "license": "MIT",
   "dependencies": {
-    "js-yaml": ">=3.13.0",
+    "atob": ">=2.1.0",
     "body-parser": "^1.18.3",
     "chai": "^4.2.0",
     "chai-http": "^4.2.1",
     "express": "^4.16.4",
+    "js-yaml": ">=3.13.0",
     "method-override": "^2.3.5",
     "mocha": "^6.0.2",
     "morgan": "^1.9.1",
-    "atob": ">=2.1.0"
+    "socket.io": "^2.2.0"
   }
 }
