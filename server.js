@@ -10,6 +10,8 @@ module.exports = function(modules){
 	routes.routes = require(__dirname + '/routes/router.js')(modules.express, routes);
 	routes.v1 = {};
 	routes.v1.example = require(__dirname + '/routes/v1/example.js')(example);
+	routes.view = {};
+	routes.view.chat = require(__dirname + '/routes/views/chat.js')(modules.path);
 
 	return routes.routes;
 

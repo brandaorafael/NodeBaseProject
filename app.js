@@ -10,6 +10,10 @@ app.use(modules.methodOverride());
 
 var http = modules.http.createServer(app);
 
+var io = modules.socket(http);
+
+require(__dirname + '/socket/chat.js')(io);
+
 var server = require(__dirname + '/server.js')(modules);
 
 server(app)();
