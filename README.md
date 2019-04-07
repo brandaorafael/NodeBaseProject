@@ -12,7 +12,7 @@ This project aims to help in the proccess of building a REST API.
 As some projects tend to have specific features, the branches of this repository stsrting with ```ft-``` are base projects with some of these features already implemented.
 In the following list you can check the branches with some feature already implemented:
 
-* **[???-](https://github.com/brandaorafael/NodeBaseProject)** - Branc
+* **[Socket.io](https://github.com/brandaorafael/NodeBaseProject/tree/ft-socket)** - Simple chat using network socket
 
 ## Installation
 
