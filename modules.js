@@ -12,6 +12,8 @@ module.exports = function(){
 	modules.bodyParser     	= require('body-parser');
 	//https://github.com/expressjs/method-override
 	modules.methodOverride 	= require('method-override');
-
+	//https://socket.io/
+	modules.socket			= require('socket.io');
+		
 	return modules;
 }
